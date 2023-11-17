@@ -4,11 +4,6 @@ SpellBook::SpellBook() {} ;
 
 SpellBook::~SpellBook() {} ;
 
-SpellBook& SpellBook::operator=(SpellBook const &obj) {
-    this->spell = obj.spell;
-    return *this;
-}
-
 void SpellBook::learnSpell(ASpell *obj) {
     if (obj)
         this->spell[obj->getName()] = obj;

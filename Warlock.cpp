@@ -10,12 +10,6 @@ Warlock::~Warlock() {
     std::cout << this->getName() + ": My job here is done!" << std::endl;
 }
 
-Warlock &Warlock::operator=(Warlock const &obj) {
-    this->name = obj.getName();
-    this->title = obj.getTitle();
-    return *this;
-}
-
 const std::string& Warlock::getName() const {
     return this->name;
 }

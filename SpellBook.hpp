@@ -12,7 +12,6 @@ class SpellBook
         ~SpellBook();
         void learnSpell(ASpell *obj);
         void forgetSpell(std::string const &name);
-        SpellBook& operator=(SpellBook const &obj);
         ASpell* createSpell(std::string const &name);
 
     private:
